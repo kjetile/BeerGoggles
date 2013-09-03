@@ -1,5 +1,7 @@
-name: BeerFinder
-description: A sample web application
+name: beergoggles
+version: 0.0.1
+author: Kjetil Eide
+description: Compare beer prices in bars close to your location.
 dependencies:
   browser: any
-  google_maps: ">=1.1.0 <2.0.0"
+  google_maps: '>=1.1.0 <2.0.0'
