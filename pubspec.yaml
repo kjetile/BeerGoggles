@@ -5,3 +5,4 @@ description: Compare beer prices in bars close to your location.
 dependencies:
   browser: any
   google_maps: '>=1.1.0 <2.0.0'
+  widget: any
