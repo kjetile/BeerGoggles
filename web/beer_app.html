@@ -1,26 +1,19 @@
 <!DOCTYPE html>
   
-  <link rel="import" href="google_map.html">
-  <link rel="stylesheet" href="beergoggles.css">
-  
   <polymer-element name="beer-app">
     <template>
       <section id="beer-app">
         <header id="header">
            <h1>Beer Finder</h1>
-           <p>
-              <a role="button" class="btn btn-primary" on-click="query('#establishment_editor_dialog').xtag.show();">
-                Add bar
-              </a>
-           </p>
+           
         </header>
         <section id="main">
-          <google-map></google-map>
+         
         </section>
       </section>
     </template>
+    <link rel="stylesheet" href="beergoggles.css">
     <script type="application/dart" src="beer_app.dart"></script>
-    <script src="packages/browser/interop.js"></script>
   </polymer-element>
     
     
