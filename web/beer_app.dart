@@ -1,10 +1,20 @@
 import 'package:polymer/polymer.dart';
-import 'dart:async';
 import 'dart:html';
 
 @CustomTag('beer-app')
 class BeerAppElement extends PolymerElement {
 
-  BeerAppElement.created() : super.created();
+  get applyAuthorStyles => true;
+  
+  BeerAppElement.created() : super.created() {
+   
+    Element e = $['modalOpenButton'];
+    e.onClick.listen(addBar);
+  }
+  
+  void addBar(event) {
+    var modal = $['modal_example'];
+    modal.show();
+  }
 }
 

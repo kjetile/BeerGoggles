@@ -6,3 +6,5 @@ dependencies:
   browser: any
   google_maps: '>=1.1.0 <2.0.0'
   polymer: any
+  widget: 
+    path: ../widget.dart
