@@ -11,18 +11,4 @@ void main() {
   
   Element mapElement = query("#map_canvas");
   final map = new GMap(mapElement, mapOptions);
-  
-  Element addButtonElement = query("#add_button");
-  Element adderElement = query("#adder");
-  
-  mapElement.hidden = false;
-  adderElement.hidden = true;
-  
-  addButtonElement.onClick.listen((e) => toggleMap(mapElement, adderElement));
-}
-
-void toggleMap(Element mapElement, Element adderElement) {
-  bool isMapVisible = !mapElement.hidden;
-  mapElement.hidden = !isMapVisible;
-  adderElement.hidden = !isMapVisible;
 }
