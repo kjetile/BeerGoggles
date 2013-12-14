@@ -8,12 +8,12 @@ class BeerAppElement extends PolymerElement {
   
   BeerAppElement.created() : super.created() {
    
-    Element e = $['modalOpenButton'];
+    Element e = $['addBarButton'];
     e.onClick.listen(addBar);
   }
   
   void addBar(event) {
-    var modal = $['modal_example'];
+    var modal = $['addBarPanel'];
     modal.show();
   }
 }
